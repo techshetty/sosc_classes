@@ -8,6 +8,7 @@ int main(){
     while(!rw[t].empty())t++;
     int rind=rand()%t;
     string cs=rw[rind];
+    cout<<cs;
     int sn=cs.length();
     string us;
     char rp[sn]; int k=0; char ex[sn];int l=0;
@@ -16,12 +17,13 @@ int main(){
     cin>>us;
     if(cs==us) {cout<<"YAY you've won";return 0;}
     for(int i=0;i<sn;i++){
+        int f=0;
         if(us[i]==cs[i]){
             rp[k++]=us[i];
         }
         for(int j=0;j<sn;j++){
             if(us[i]==cs[j]){
-                ex[l++]=us[i];
+                ex[l++]=us[i];break;
             }
         }
     }
