@@ -16,7 +16,6 @@ int main(){
     cin>>us;
     if(cs==us) {cout<<"YAY you've won";return 0;}
     for(int i=0;i<sn;i++){
-        int f=0;
         if(us[i]==cs[i]){
             rp[k++]=us[i];
         }
