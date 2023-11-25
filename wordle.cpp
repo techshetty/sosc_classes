@@ -8,7 +8,6 @@ int main(){
     while(!rw[t].empty())t++;
     int rind=rand()%t;
     string cs=rw[rind];
-    cout<<cs;
     int sn=cs.length();
     string us;
     char rp[sn]; int k=0; char ex[sn];int l=0;
@@ -27,7 +26,6 @@ int main(){
             }
         }
     }
-    // cout<<k<<l;
     if(k==0) cout<<"\nNo words are at right pos";
     else{
         cout<<"\nWords at right pos: ";
